@@ -1,0 +1,227 @@
+.App {
+  text-align: center;
+}
+
+/*  */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-item {
+    position: absolute;
+    transition: transform 0.5s ease-out;
+    opacity: 0;
+}
+
+.carousel-item.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.carousel-item.next {
+    opacity: 1;
+    transform: translateX(100%); /* Slide in from the right */
+}
+
+.carousel-item.active {
+    transform: translateY(-100%); /* Slide out to the left */
+}
+
+
+html{
+  scroll-behavior: smooth;
+  background-color: #040C18;
+  overflow-x: hidden;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* @font-face {
+  font-family: 'Slick';
+  src: url('path/to/slick.woff') format('woff'),
+       url('path/to/slick.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} */
+/* @font-face {
+  font-family: 'slick';
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/fonts/slick.woff') format('woff'),
+       url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/fonts/slick.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.page-icon {
+  width: 70px; 
+  background-color: #1e3a8a;
+}
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+.gradient{
+ top: -20px; 
+}
+/* Vector */
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+.background {
+  /* background: rgb(9, 53, 80); */
+  /* box-shadow: 1px 1px 8px 3px rgb(248 250 251 / 48%); */
+  background-image: url('../public/Asset/Frame.png');
+  background-blend-mode: Saturation;
+}
+
+#contact-span {
+  width: 39px;
+  height: 6px;
+  gap: 0px;
+  border-radius: 8px;
+  opacity: 0px;
+  border: none;
+  background: linear-gradient(90deg, #AD66F9 30%, #EF9570 100%);
+}
+
+#contact-class {
+  color: #EF9570;
+}
+
+.border-all {
+  border: 1px solid #EF9570;
+  border-radius: 0 30px 30px 30px;
+}
+
+.borderall {
+  border: 1px solid rgb(243, 116, 243);
+  border-radius: 30px 0 30px 30px;
+}
+
+#gradient {
+  /* color: linear-gradient(103.22deg, #AD66F9 -13.86%, #f49867 99.55%); */
+  background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+  /* font-family: Manrope; */
+  color: transparent;
+}
+
+#submit {
+  opacity: 2px;
+  background: rgba(255, 255, 255, 0.26);
+  box-shadow: 0px 4px 4px 0px rgba(4, 43, 90, 0.2);
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.vector{
+  background: url('/src/assets/vector.png');
+  /* background-position: center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: inherit;
+  border-radius: inherit;
+  width: 40%;
+  background-clip: border-box;
+  /* z-index: 200000000000000000000000; */
+}
+
+
+.vector2{
+  background: url('/src/assets/vector2.png');
+  /* background-position: center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: inherit;
+  border-radius: inherit;
+  width: 40%;
+  background-clip: border-box;
+  /* z-index: 200000000000000000000000; */
+}
+
+
+
+
+.vectorC{
+  height: inherit;
+  /* border-radius: inherit; */
+}
+
+
+
+.checklogo{
+  background: url('/src/assets/checklogo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: inherit;
+  border-radius: inherit;
+  width: 100px;
+  background-clip: border-box;
+  z-index: 200000000000000000000000;
+}
+
+
+/*Exchange SignUp Side Image*/
+
+.ExSideImg{
+  background: url('/src/assets/Signuplogo.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+
+}
+
+
+/*Exchange Side Logo*/
+
+.ExSideLogo{
+  background: url('/src/assets/checklogo.png');
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  /* background-size: cover; */
+  width: 100px;
+  height: 100px;
+}
+
+
+
+/* Terms and Condition Logo */
+
+.TermsLogo{
+  background: url('/src/assets/checklogo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
